@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax with Jquery</title>
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+</head>
+<body>
+    <div class="container">
+        <p id="h">Hello friends</p>
+        <button class="btn btn-primary" id="button"> click me</button>
+    </div>
+    <script type="text/javascript">
+    /*AJAX USING JQUERY*/
+        // $(document).ready(function()
+        // {
+        //     $("#button").click(function()
+        //     {
+        //         //$("div p").load("open.html");
+        //         $("#h").load("open.html",function()
+        //         {
+        //             $("#h").css("background-color","red");
+        //         });
+        //     })
+        // });
+
+        /*AJAX USING JAVA SCRIPT*/
+        // function on()
+        // {
+        //     var resp=new XMLHttpRequest();
+        //     resp.open("POST","open.html",true);
+        //     resp.send();
+        //     resp.onreadystatechange=function()
+        //     {
+        //         if(resp.readyState==4&&resp.status==200)
+        //         {
+        //             document.getElementById("h").innerHTML=resp.responseText;
+        //         }
+        //     };
+        // }
+
+        /*AJAX USING GET METHOD*/
+        // $(document).ready(function()
+        // {
+        //     $("button").click(function()
+        //     {
+        //         $.get("open.html",function(data,status)   //status will check if it is success or not
+        //         // data will fetch the data and show to us
+        //         {
+        //             $("#h").html(data);
+        //             alert(status);
+        //         });
+              
+        //     })
+        // });
+
+         /*AJAX USING POST METHOD*/
+        //  $(document).ready(function()
+        //  {
+        //     $("button").click(function()
+        //     {
+        //         $.post("open.php",{
+        //             name: "pankaj",
+        //             sub : "electronics"
+        //         },function(data){
+        //             $("#h").html(data);
+        //         })
+        //     })
+        //  });
+
+    </script>
+</body>
+</html>
